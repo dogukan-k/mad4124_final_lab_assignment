@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='DogukanKarayilanoglu_mad4124_final_lab_assignment'

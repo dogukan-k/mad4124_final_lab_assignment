@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonDetailController">
+
+    <TextView
+        android:id="@+id/textView2D"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_nameD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView2D"
+        app:layout_constraintTop_toBottomOf="@+id/textView2D" />
+
+    <TextView
+        android:id="@+id/textView3D"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Lastname"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="@+id/txt_nameD"
+        app:layout_constraintStart_toStartOf="@+id/txt_nameD"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nameD" />
+
+    <EditText
+        android:id="@+id/txt_last_nameD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView3D"
+        app:layout_constraintStart_toStartOf="@+id/textView3D"
+        app:layout_constraintTop_toBottomOf="@+id/textView3D" />
+
+    <TextView
+        android:id="@+id/textView4D"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Phone Number"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txt_last_nameD"
+        app:layout_constraintTop_toBottomOf="@+id/txt_last_nameD" />
+
+    <EditText
+        android:id="@+id/txt_phone_numberD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView4D"
+        app:layout_constraintStart_toStartOf="@+id/textView4D"
+        app:layout_constraintTop_toBottomOf="@+id/textView4D" />
+
+    <TextView
+        android:id="@+id/textView5D"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Address"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="@+id/txt_phone_numberD"
+        app:layout_constraintStart_toStartOf="@+id/txt_phone_numberD"
+        app:layout_constraintTop_toBottomOf="@+id/txt_phone_numberD" />
+
+    <EditText
+        android:id="@+id/txt_addressD"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView5D"
+        app:layout_constraintTop_toBottomOf="@+id/textView5D" />
+
+    <Button
+        android:id="@+id/btn_update_person"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Update Person"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_remove_person" />
+
+    <Button
+        android:id="@+id/btn_remove_person"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="Remove Person"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_update_person"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_update_person" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
